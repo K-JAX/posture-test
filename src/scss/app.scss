@@ -1,0 +1,37 @@
+/**
+ * Parent and Core Style Imports
+ *
+ * Imports all core mixins and all template/component styles
+ *
+ * DO NO EDIT OR REMOVE THESE DIRECTLY.
+ *
+ **/
+
+// Imports the core output styles from settings and the mixins/vars that come with settings
+@import "core";
+
+@include sanitizer-setter();
+@include general-typography-setter();
+
+//partials
+@import "partials/fluid-typography";
+
+// Modules
+@import "Parent/scss/modules/supers/supers";
+//@import "Parent/scss/components/fontawesome";
+
+// Components
+@import "components/buttons";
+@import "components/card";
+@import "components/containers";
+@import "components/header";
+@import "components/links";
+@import "components/navigation";
+@import "components/footer";
+@import "components/grids";
+
+// Utilities
+@import "util/padding";
+
+// Templates
+@import "templates/front";

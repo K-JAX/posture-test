@@ -1,0 +1,28 @@
+{
+	"version": 1.1,
+	"entries": {
+		"app": ["./src/js/app.js", "./src/scss/app.scss"]
+	},
+	"resolve": {
+		"Parent": "./../posturepress2/src/"
+	},
+	"inputFilePath": "./src/",
+	"outputFilePath": "./dist/",
+	"revisionAssets": false,
+	"publicPath": "/wp-content/themes/posturepress2-child/dist/",
+	"port": 10101,
+	"faviconator": {
+		"source": "./src/images/favicon.png",
+		"appName": "Posturepress2",
+		"appShortName": "PP2",
+		"appDescription": "Posture Wordpress Theme",
+		"developerName": "Posture",
+		"developerURL": "https://getposture.com",
+		"background": "#fff",
+		"theme_color": "#fff"
+	}
+}
+
+
+
+

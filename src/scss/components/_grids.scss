@@ -1,0 +1,52 @@
+.c-grid {
+	--grid-col-sm: 1fr;
+	--grid-col-md: 1fr;
+	--grid-col-lg: 2fr;
+	--grid-gap: 10px;
+
+	display: grid;
+	grid-template-columns: var(--grid-col-sm);
+	grid-gap: var(--grid-gap);
+
+	@include mq(m) {
+		grid-template-columns: var(--grid-col-md);
+	}
+
+	@include mq(l) {
+		grid-template-columns: var(--grid-col-lg);
+	}
+
+	.cell {
+		display: flex;
+		flex-flow: column nowrap;
+		height: auto;
+	}
+}
+
+
+.f-grid {
+	display: flex;
+	flex-flow: row wrap;
+	--cell-size-sm: 100%;
+	--cell-size-md: 50%;
+	--cell-size-lg: 33.33%;
+	--grid-gap: 30px;
+
+	margin: calc((var(--grid-gap) * .5) * -1);
+
+	.cell {
+		display: flex;
+		flex-flow: column nowrap;
+		height: auto;
+		flex-basis: calc(var(--cell-size-sm) - var(--grid-gap));
+		margin: calc(var(--grid-gap) * .5);
+
+		@include mq(m) {
+			flex-basis: calc(var(--cell-size-md) - var(--grid-gap));
+		}
+
+		@include mq(l) {
+			flex-basis: calc(var(--cell-size-lg) - var(--grid-gap));
+		}
+	}
+}

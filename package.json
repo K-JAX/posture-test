@@ -1,0 +1,20 @@
+{
+	"name": "posturepress2",
+	"version": "0.1.0",
+	"description": "PosturePress V2",
+	"main": "index.js",
+	"author": "Posture",
+	"license": "ISC",
+	"scripts": {
+		"start": "platform start",
+		"build": "platform build",
+		"postinstall": "cd ./.platform && pnpm install"
+	},
+	"dependencies": {
+		"platform": "file:./.platform"
+	},
+	"resolutions": {
+		"chokidar": "^3.4.3"
+	},
+	"sideEffects": false
+}

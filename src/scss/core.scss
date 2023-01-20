@@ -1,0 +1,34 @@
+/**
+ * Parent and Core Style Imports
+ *
+ * Imports all core mixins and all template/component styles
+ *
+ * DO NOT EDIT OR REMOVE THESE DIRECTLY.
+ *
+ * Except for grids they can be commented out if they are not needed
+ **/
+$enableBlueprint: true;
+
+//Settings
+@import "mixins/sizing";
+@import "Parent/scss/settings/partials/sizing-utilities";
+@import "mixins/breakpoints";
+@import "Parent/scss/settings/mixins/breakpoint-utilities";
+@import "partials/colors";
+@import "Parent/scss/settings/partials/color-utilities";
+@import "Parent/scss/settings/mixins/fluid-properties";
+@import "Parent/scss/settings/partials/accessibility";
+@import "partials/general-variables";
+@import "partials/typography";
+@import "Parent/scss/settings/partials/typography-utlities";
+@import "partials/grids";
+@import "Parent/scss/settings/mixins/rem-calc";
+
+// Grid frameworks
+//@import "Parent/../node_modules/blueprint-css/src/blueprint";
+
+@import "Parent/scss/settings/partials/sanitize";
+/**
+ * End Parent imports
+ *
+ **/

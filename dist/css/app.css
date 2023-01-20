@@ -1,0 +1,1316 @@
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/css-loader@6.7.1_webpack@5.71.0/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/.pnpm/postcss-loader@6.2.1_uc4qctwj44nkyf42gqi5c2c22q/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/.pnpm/sass-loader@12.6.0_sass@1.49.0+webpack@5.71.0/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!../src/scss/app.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap);
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/css-loader@6.7.1_webpack@5.71.0/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/.pnpm/postcss-loader@6.2.1_uc4qctwj44nkyf42gqi5c2c22q/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/.pnpm/sass-loader@12.6.0_sass@1.49.0+webpack@5.71.0/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!../src/scss/app.scss (1) ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
+/**
+ * Parent and Core Style Imports
+ *
+ * Imports all core mixins and all template/component styles
+ *
+ * DO NO EDIT OR REMOVE THESE DIRECTLY.
+ *
+ **/
+/**
+ * Parent and Core Style Imports
+ *
+ * Imports all core mixins and all template/component styles
+ *
+ * DO NOT EDIT OR REMOVE THESE DIRECTLY.
+ *
+ * Except for grids they can be commented out if they are not needed
+ **/
+/**
+ * Settings for sizing variables
+ **/
+/**
+ * Can be used in various places like fluid typography
+ * Must be called from styles ex: padding: var(--fluid-padding)
+ * Very useful when styles looks too large on mobile
+ **/
+/**
+ * Simplified Breakpoint mixin
+ * Is Mobile-First but includes the modifier key to go up/down
+ *
+ * //TODO `Only` modifier seems logically complex maybe we don't need it?
+ **/
+/**
+ * Fluid properties, makes life so much easier responsiveness wise
+ * BIG WARNING THIS ONLY OPERATES IN Pixel units
+ **/
+/**
+ * Fluid Properties
+ * Allows properties to be linearly fluid between two viewport values.
+ * This is useful for a variety of typography and responsive sizing needs
+ *
+ * @group Settings Mixins
+ * @param {property} $property - A css property
+ * @param {pixel value} $min-size - The smallest size this value will shrink to on small viewports
+ * @param {pixel value} $max-size - The largest size this value will stretch to on large viewports
+ * @param {pixel value} $min-vw - OPTIONAL: can set the min viewport for custom styling needs
+ * @param {pixel value} $max-vw - OPTIONAL: can set the max viewport for custom styling needs
+ **/
+/**
+ * Styling needed for accessibility
+ **/
+/**
+ * General variables that can be used throughout the theme :)
+ **/
+/**
+ * --- Font-face setters ---
+ * Supports Local and external font foundries
+ * Prefer using .woff files when using local fonts
+ **/
+/** --- General typography settings --- **/
+/**
+ * General typography utilities
+ **/
+/*
+@mixin general-typography-setter() {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-weight: $header-font-weight;
+		line-height: $header-line-height;
+		margin-bottom: $header-margin-bottom;
+		color: $header-color;
+	}
+
+	html {
+		font-weight: $body-font-weight;
+	}
+
+	p {
+		margin-bottom: $paragraph-margin-bottom;
+	}
+}*/
+/**
+ * --- Fluid Typography ---
+ *
+ * Creates fonts that will scale with the width of the screen using the function below
+ * Works by using viewport width and some fancy linear algorithm that works with css calc!
+ * Even IE11 works with this 🙌
+ *
+ * TODO Make this easier to edit
+ **/
+/** END --- Fluid Typography --- END **/
+/** Blueprint css grid **/
+/**
+ * Simple rem calculator takes pixels and turns them into rem units
+ **/
+/**
+ * General style normalizer
+ * If sanitizer isn't working well for you there are various other options:
+ * normalize.css, reset.css, css-mini-reset, html5 reset stylesheet etc...
+ **/
+/**
+ * End Parent imports
+ *
+ **/
+/* Document
+ * ========================================================================== */
+/**
+ * Add border box sizing in all browsers (opinionated).
+ */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/**
+ * 1. Add text decoration inheritance in all browsers (opinionated).
+ * 2. Add vertical alignment inheritance in all browsers (opinionated).
+ */
+::before,
+::after {
+  text-decoration: inherit;
+  /* 1 */
+  vertical-align: inherit;
+  /* 2 */
+}
+
+/**
+ * 1. Use the default cursor in all browsers (opinionated).
+ * 2. Change the line height in all browsers (opinionated).
+ * 3. Use a 4-space tab width in all browsers (opinionated).
+ * 4. Remove the grey highlight on links in iOS (opinionated).
+ * 5. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ * 6. Breaks words to prevent overflow in all browsers (opinionated).
+ */
+html {
+  cursor: default;
+  /* 1 */
+  line-height: 1.5;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4;
+  /* 3 */
+  -webkit-tap-highlight-color: transparent;
+  -ms-text-size-adjust: 100%;
+  /* 5 */
+  -webkit-text-size-adjust: 100%;
+  /* 5 */
+  word-break: break-word;
+  /* 6 */
+}
+
+/* Sections
+ * ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Correct margin-top nobody ever wants margin-top
+ */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+
+/* Grouping content
+ * ========================================================================== */
+/**
+ * Remove the margin on nested lists in Chrome, Edge, IE, and Safari.
+ */
+dl dl,
+dl ol,
+dl ul,
+ol dl,
+ul dl {
+  margin: 0;
+}
+
+/**
+ * Remove the margin on nested lists in Edge 18- and IE.
+ */
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  margin: 0;
+}
+
+/**
+ * 1. Add the correct sizing in Firefox.
+ * 2. Show the overflow in Edge 18- and IE.
+ */
+hr {
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * Add the correct display in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Remove the list style on navigation lists in all browsers (opinionated).
+ */
+nav ol,
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+ * ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Add the correct text decoration in Edge 18-, IE, and Safari.
+ */
+abbr[title] {
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/* Embedded content
+ * ========================================================================== */
+/*
+ * Change the alignment on media elements in all browsers (opinionated).
+ */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on iframes in all browsers (opinionated).
+ */
+iframe {
+  border-style: none;
+}
+
+/**
+ * Remove the border on images within links in IE 10-.
+ */
+img {
+  border-style: none;
+}
+
+/**
+ * Default that images won't stretch outside of the parent container
+ */
+img {
+  max-width: 100%;
+}
+
+/**
+ * Change the fill color to match the text color in all browsers (opinionated).
+ */
+svg:not([fill]) {
+  fill: currentColor;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Tabular data
+ * ========================================================================== */
+/**
+ * Collapse border spacing in all browsers (opinionated).
+ */
+table {
+  border-collapse: collapse;
+}
+
+/* Forms
+ * ========================================================================== */
+/**
+ * Remove the margin on controls in Safari.
+ */
+button,
+input,
+select {
+  margin: 0;
+}
+
+/**
+ * 1. Show the overflow in IE.
+ * 2. Remove the inheritance of text transform in Edge 18-, Firefox, and IE.
+ */
+button {
+  overflow: visible;
+  /* 1 */
+  text-transform: none;
+  /* 2 */
+}
+
+/**
+ * Correct the inability to style buttons in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * 1. Change the inconsistent appearance in all browsers (opinionated).
+ * 2. Correct the padding in Firefox.
+ */
+fieldset {
+  border: 1px solid #a0a0a0;
+  /* 1 */
+  padding: 0.35em 0.75em 0.625em;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in Edge 18- and IE.
+ */
+input {
+  overflow: visible;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge 18- and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ */
+legend {
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * 1. Add the correct display in Edge 18- and IE.
+ * 2. Add the correct vertical alignment in Chrome, Edge, and Firefox.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Remove the inheritance of text transform in Firefox.
+ */
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Remove the margin in Firefox and Safari.
+ * 2. Remove the default vertical scrollbar in IE.
+ * 3. Change the resize direction in all browsers (opinionated).
+ */
+textarea {
+  margin: 0;
+  /* 1 */
+  overflow: auto;
+  /* 2 */
+  resize: vertical;
+  /* 3 */
+}
+
+/**
+ * Remove the padding in IE 10-.
+ */
+[type=checkbox],
+[type=radio] {
+  padding: 0;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome, Edge, and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Safari.
+ */
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+
+/**
+ * Remove the inner padding in Chrome, Edge, and Safari on macOS.
+ */
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style upload buttons in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding of focus outlines in Firefox.
+ */
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus outline styles unset by the previous rule in Firefox.
+ */
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Remove the additional :invalid styles in Firefox.
+ */
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/* Interactive
+ * ========================================================================== */
+/*
+ * Add the correct display in Edge 18- and IE.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct styles in Edge 18-, IE, and Safari.
+ */
+dialog {
+  background-color: white;
+  border: solid;
+  color: black;
+  display: block;
+  height: -moz-fit-content;
+  height: -webkit-fit-content;
+  height: fit-content;
+  left: 0;
+  margin: auto;
+  padding: 1em;
+  position: absolute;
+  right: 0;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+}
+
+dialog:not([open]) {
+  display: none;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Scripting
+ * ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none;
+}
+
+/* User interaction
+ * ========================================================================== */
+/*
+ * 1. Remove the tapping delay in IE 10.
+ * 2. Remove the tapping delay on clickable elements
+	  in all browsers (opinionated).
+ */
+a,
+area,
+button,
+input,
+label,
+select,
+summary,
+textarea,
+[tabindex] {
+  /* 1 */
+  touch-action: manipulation;
+  /* 2 */
+}
+
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none;
+}
+
+/* Accessibility
+ * ========================================================================== */
+/**
+ * Change the cursor on busy elements in all browsers (opinionated).
+ */
+[aria-busy=true] {
+  cursor: progress;
+}
+
+/*
+ * Change the cursor on control elements in all browsers (opinionated).
+ */
+[aria-controls] {
+  cursor: pointer;
+}
+
+/*
+ * Change the cursor on disabled, not-editable, or otherwise
+ * inoperable elements in all browsers (opinionated).
+ */
+[aria-disabled=true],
+[disabled] {
+  cursor: not-allowed;
+}
+
+/*
+ * Change the display on visually hidden accessible elements
+ * in all browsers (opinionated).
+ */
+[aria-hidden=false][hidden] {
+  display: initial;
+}
+
+[aria-hidden=false][hidden]:not(:focus) {
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", -apple-system, "Ubuntu", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  color: #07a0c3;
+  text-transform: none;
+}
+
+html {
+  font-weight: 400;
+  font-family: "Poppins", -apple-system, "Ubuntu", sans-serif;
+  line-height: 1.2;
+  color: #000000;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+}
+
+:root {
+  --fluid-jumbo: 55px;
+}
+:root {
+  --fluid-h1: 42px;
+}
+:root {
+  --fluid-h2: 34px;
+}
+:root {
+  --fluid-h3: 30px;
+}
+:root {
+  --fluid-h4: 28px;
+}
+:root {
+  --fluid-h5: 24px;
+}
+:root {
+  --fluid-h6: 20px;
+}
+:root {
+  --fluid-body: 16px;
+}
+:root {
+  --fluid-body-sm: 16px;
+}
+:root {
+  --fluid-body-xs: 14px;
+}
+
+h1,
+.fluid-h1 {
+  font-size: var(--fluid-h1);
+}
+
+h2,
+.fluid-h2 {
+  font-size: var(--fluid-h2);
+}
+
+h3,
+.fluid-h3 {
+  font-size: var(--fluid-h3);
+}
+
+h4,
+.fluid-h4 {
+  font-size: var(--fluid-h4);
+}
+
+h5,
+.fluid-h5 {
+  font-size: var(--fluid-h5);
+}
+
+h6,
+.fluid-h6 {
+  font-size: var(--fluid-h6);
+}
+
+html,
+.fluid-body {
+  font-size: var(--fluid-body);
+}
+
+.fluid-body-sm {
+  font-size: var(--fluid-body-sm);
+}
+
+/**
+ * Supers!
+ * An example of a separate functionality module
+ * To note this module integrates with the theme settings
+ * This should be a normal aspect of modules for easy integration with existing projects
+ **/
+/**
+ * Generic footer layout engine 📏
+ **/
+.s-footer {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #a2a2a2;
+}
+.s-footer .s-footer-inner-wrap {
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 1rem 1rem 1rem;
+}
+.s-footer .s-footer-grid {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: center;
+  width: 230px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.s-footer .s-footer-cell {
+  padding: 0.6rem 0.6rem;
+  display: block;
+  max-width: 100%;
+  width: 230px;
+}
+.s-footer .s-footer-logo-container .s-footer-logo {
+  width: 100%;
+  max-width: 100%;
+  max-height: 60px;
+  height: 50px;
+}
+.s-footer .s-footer-menu {
+  width: 230px;
+}
+.s-footer .s-footer-menu ul {
+  display: flex;
+  flex-flow: column nowrap;
+  list-style: none;
+  width: 100%;
+}
+.s-footer .s-footer-menu ul li {
+  width: auto;
+  font-weight: bold;
+  text-align: center;
+}
+.s-footer .s-footer-menu ul li a {
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+}
+.s-footer .s-footer-copyright {
+  text-align: center;
+}
+
+.s-footer-copyright-row {
+  background-color: #d1d1d1;
+  color: white;
+}
+.s-footer-copyright-row a {
+  color: white;
+  transition: all 0.3s ease;
+}
+.s-footer-copyright-row a:hover, .s-footer-copyright-row a:active, .s-footer-copyright-row a:focus {
+  color: orange;
+}
+.s-footer-copyright-row i {
+  padding: 0.3rem;
+}
+.s-footer-copyright-row .inner-wrap {
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 20px 1rem 20px;
+  justify-content: center;
+  align-items: center;
+}
+.s-footer-copyright-row .right-cell {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.s-footer-copyright-row .right-cell .foundation-link {
+  display: flex;
+  margin: 1rem;
+  padding-top: 1rem;
+  margin-top: 0;
+  text-decoration: underline;
+  font-weight: 500;
+}
+.s-footer-copyright-row .right-cell .footer-socials {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.s-footer-menu a {
+  color: orange;
+  font-weight: 500;
+}
+.s-footer-menu a:hover, .s-footer-menu a:active, .s-footer-menu a:focus {
+  filter: brightness(110%);
+}
+.s-footer-menu .is-active a {
+  background: transparent;
+  font-weight: 700;
+  color: red;
+}
+.s-footer-grid .menu-item {
+  flex-shrink: 0;
+}
+
+/**
+ * Super section :D
+ * A section that contains content
+ * The section/inner-wrap is set to flex column for easy placement of children elements 🙌
+ **/
+.s-section {
+  display: flex;
+  flex-flow: column nowrap;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 100%;
+}
+.s-inner-wrap {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 75px 20px;
+  width: 1200px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-self: stretch;
+  align-self: stretch;
+  overflow: hidden;
+  z-index: 1;
+  flex-grow: 1;
+}
+.s-center > .super-inner-wrap,
+.s-center .s-inner-wrap {
+  align-items: center;
+  justify-content: center;
+}
+.s-flex-end > .super-inner-wrap,
+.s-flex-end .s-inner-wrap {
+  justify-content: flex-end;
+}
+.s-constrain .super-inner-wrap,
+.s-constrain .s-inner-wrap {
+  width: 1200px;
+}
+
+/**
+ * Buttons
+ **/
+.fancy-btn {
+  display: inline-block;
+  padding: 1em 2em;
+  font-weight: bold;
+  background: #07a0c3;
+  color: white;
+  transition: all 0.3s ease;
+}
+.fancy-btn:hover, .fancy-btn:focus, .fancy-btn:active {
+  color: white;
+  background: #0688a6;
+}
+.fancy-btn:active {
+  color: white;
+  background: #046075;
+}
+
+.card {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+.card a {
+  text-decoration: none;
+}
+.card figcaption {
+  padding: 20px;
+}
+.card figcaption .card-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: gray;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-header {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+.site-header .branding .home-link {
+  display: inline-flex;
+  text-decoration: none;
+  align-items: center;
+}
+.site-header .branding .home-link .site-logo {
+  width: 52px;
+  height: 52px;
+  margin-right: 20px;
+}
+.site-header .branding .home-link .site-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/**
+ * Link styling
+ * Links can get pretty fancy so the setting partials do not get involved
+ **/
+a {
+  color: #07a0c3;
+  transition: all 0.3s ease;
+}
+a:hover, a:focus {
+  color: #0688a6;
+}
+a:active {
+  color: #046075;
+}
+
+.c-grid {
+  --grid-col-sm: 1fr;
+  --grid-col-md: 1fr;
+  --grid-col-lg: 2fr;
+  --grid-gap: 10px;
+  display: grid;
+  grid-template-columns: var(--grid-col-sm);
+  grid-gap: var(--grid-gap);
+}
+.c-grid .cell {
+  display: flex;
+  flex-flow: column nowrap;
+  height: auto;
+}
+
+.f-grid {
+  display: flex;
+  flex-flow: row wrap;
+  --cell-size-sm: 100%;
+  --cell-size-md: 50%;
+  --cell-size-lg: 33.33%;
+  --grid-gap: 30px;
+  margin: calc(var(--grid-gap) * 0.5 * -1);
+}
+.f-grid .cell {
+  display: flex;
+  flex-flow: column nowrap;
+  height: auto;
+  flex-basis: calc(var(--cell-size-sm) - var(--grid-gap));
+  margin: calc(var(--grid-gap) * 0.5);
+}
+
+.p-0 {
+  padding: 0;
+}
+.p-1 {
+  padding: 10px;
+}
+.p-2 {
+  padding: 15px;
+}
+.p-3 {
+  padding: 20px;
+}
+.p-4 {
+  padding: 25px;
+}
+.p-5 {
+  padding: 30px;
+}
+.px-0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.px-1 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.px-2 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.px-3 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.px-4 {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.px-5 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.py-0 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.py-1 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.py-2 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.py-3 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.py-4 {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.py-5 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#hero {
+  display: flex;
+  position: relative;
+  background: #07a0c3;
+  height: 75vh;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+#hero .video-embed-container .video-embed {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 110%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+#hero .video-embed-container:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #07a0c3;
+  opacity: 0.65;
+  z-index: 1;
+}
+#hero .hero-headline {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+}
+#hero .hero-headline h1 {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+@media (min-width: 400px){
+  :root {
+    --fluid-jumbo: calc(
+					55px + 20 *
+						((100vw - 400px) / 800)
+				);
+  }
+  :root {
+    --fluid-h1: calc(
+					42px + 18 *
+						((100vw - 400px) / 800)
+				);
+  }
+  :root {
+    --fluid-h2: calc(
+					34px + 18 *
+						((100vw - 400px) / 800)
+				);
+  }
+  :root {
+    --fluid-h3: calc(
+					30px + 12 *
+						((100vw - 400px) / 800)
+				);
+  }
+  :root {
+    --fluid-h4: calc(
+					28px + 6 *
+						((100vw - 400px) / 800)
+				);
+  }
+  :root {
+    --fluid-h5: calc(
+					24px + 4 *
+						((100vw - 400px) / 800)
+				);
+  }
+  :root {
+    --fluid-h6: calc(
+					20px + 2 *
+						((100vw - 400px) / 800)
+				);
+  }
+  :root {
+    --fluid-body: calc(
+					16px + 2 *
+						((100vw - 400px) / 800)
+				);
+  }
+  :root {
+    --fluid-body-sm: calc(
+					16px + 2 *
+						((100vw - 400px) / 800)
+				);
+  }
+  :root {
+    --fluid-body-xs: calc(
+					14px + 2 *
+						((100vw - 400px) / 800)
+				);
+  }
+}
+@media (min-width: 480px){
+  .s-footer-copyright-row .inner-wrap {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+  .s-footer-copyright-row .right-cell .foundation-link {
+    padding-top: unset;
+    margin: unset;
+    margin-right: 1rem;
+  }
+}
+@media (min-width: 768px){
+  .s-footer .s-footer-grid {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .s-footer .s-footer-cell {
+    width: auto;
+  }
+  .s-footer .s-footer-logo-container {
+    width: auto;
+  }
+  .s-footer .s-footer-menu {
+    width: auto;
+  }
+  .s-footer .s-footer-menu ul {
+    margin-left: -1rem;
+  }
+  .s-footer .s-footer-menu ul {
+    flex-flow: row nowrap;
+  }
+  .s-footer-copyright-row .right-cell {
+    flex-flow: row nowrap;
+  }
+  .s-footer-copyright-row .right-cell .footer-socials {
+    margin-top: 0;
+  }
+  .c-grid {
+    grid-template-columns: var(--grid-col-md);
+  }
+  .f-grid .cell {
+    flex-basis: calc(var(--cell-size-md) - var(--grid-gap));
+  }
+  #hero .hero-headline {
+    font-size: 64px;
+  }
+}
+@media (min-width: 1024px){
+  .c-grid {
+    grid-template-columns: var(--grid-col-lg);
+  }
+  .f-grid .cell {
+    flex-basis: calc(var(--cell-size-lg) - var(--grid-gap));
+  }
+  #hero .hero-headline {
+    font-size: 72px;
+  }
+}
+@media (min-width: 1200px){
+  :root {
+    --fluid-jumbo: 75px;
+  }
+  :root {
+    --fluid-h1: 60px;
+  }
+  :root {
+    --fluid-h2: 52px;
+  }
+  :root {
+    --fluid-h3: 42px;
+  }
+  :root {
+    --fluid-h4: 34px;
+  }
+  :root {
+    --fluid-h5: 28px;
+  }
+  :root {
+    --fluid-h6: 22px;
+  }
+  :root {
+    --fluid-body: 18px;
+  }
+  :root {
+    --fluid-body-sm: 18px;
+  }
+  :root {
+    --fluid-body-xs: 16px;
+  }
+}
+@media (max-width: 1024px){
+  .s-footer-grid {
+    justify-content: center;
+  }
+  .s-footer-grid .menu {
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=app.css.map*/

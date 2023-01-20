@@ -1,0 +1,13 @@
+/**
+ * Font Awesome is very heavy use with care and don't import everything
+ * I'd say for most use cases just import brands!
+ * Arrows and other icons are usually custom by default ask design for assets
+ * don't use font awesome for these things
+ * For example Font awesome regular comes with a 2.5MB Cost!
+ **/
+
+$fa-font-path: "../../../posturepress/node_modules/@fortawesome/fontawesome-pro/webfonts";
+@import "../../../../posturepress/node_modules/@fortawesome/fontawesome-pro/scss/fontawesome";
+//@import '../../../../posturepress/node_modules/@fortawesome/fontawesome-pro/scss/solid';
+//@import '../../../../posturepress/node_modules/@fortawesome/fontawesome-pro/scss/regular';
+@import "../../../../posturepress/node_modules/@fortawesome/fontawesome-pro/scss/brands";

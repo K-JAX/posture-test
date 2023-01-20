@@ -1,0 +1,61 @@
+/**
+ * --- Font-face setters ---
+ * Supports Local and external font foundries
+ * Prefer using .woff files when using local fonts
+ **/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
+// Settings for font-face
+// $header-font-name: "Helvetica";
+// $body-font-name: "Roboto";
+$header-font-name: "Poppins";
+$body-font-name: "Poppins";
+$header-font-family: $header-font-name, -apple-system, "Ubuntu", sans-serif;
+$body-font-family: $body-font-name, -apple-system, "Ubuntu", sans-serif;
+
+@mixin general-typography-setter() {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: $header-font-family;
+		font-weight: $header-font-weight;
+		line-height: $header-line-height;
+		margin-bottom: $header-margin-bottom;
+		color: $header-color;
+		text-transform: $header-transform;
+	}
+
+	html {
+		font-weight: $body-font-weight;
+		font-family: $body-font-family;
+		line-height: $body-line-height;
+		color: $body-font-color;
+	}
+
+	p {
+		margin: $paragraph-margin 0;
+	}
+
+	// Add regular font smoothing to chrome/webkit
+	* {
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		font-smooth: always;
+	}
+}
+
+/** --- General typography settings --- **/
+$header-line-height: 1.2;
+$header-margin-bottom: 0.5rem;
+$header-font-weight: 700;
+$header-color: $primary-color;
+$header-transform: none;
+
+$body-font-weight: 400;
+$body-line-height: 1.2;
+$body-font-color: $black;
+$paragraph-margin: 1rem;

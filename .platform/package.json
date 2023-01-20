@@ -1,0 +1,51 @@
+{
+	"name": "platform",
+	"version": "1.2.2",
+	"description": "Platform is a global webpack bundler and utility",
+	"main": "platform.js",
+	"author": "Posture",
+	"license": "ISC",
+	"devDependencies": {
+		"@swc/core": "^1.2.163",
+		"adm-zip": "^0.5.9",
+		"autoprefixer": "^10.4.4",
+		"chokidar": "^3.5.3",
+		"clean-webpack-plugin": "^4.0.0",
+		"colors": "^1.4.0",
+		"copy-webpack-plugin": "^10.2.4",
+		"cross-port-killer": "^1.4.0",
+		"css-loader": "^6.7.1",
+		"cssnano": "^5.1.7",
+		"favicons": "^6.2.2",
+		"file-loader": "^6.2.0",
+		"image-minimizer-webpack-plugin": "^3.2.3",
+		"image-webpack-loader": "^8.1.0",
+		"imagemin-gifsicle": "^7.0.0",
+		"imagemin-mozjpeg": "^10.0.0",
+		"imagemin-pngquant": "^9.0.2",
+		"imagemin-svgo": "^8.0.0",
+		"mini-css-extract-plugin": "^2.6.0",
+		"postcss": "^8.4.12",
+		"postcss-loader": "^6.2.1",
+		"postcss-sort-media-queries": "^4.2.1",
+		"prettier": "2.4.1",
+		"sass": "1.49.0",
+		"sass-loader": "^12.6.0",
+		"simple-git": "^3.5.0",
+		"style-loader": "^3.3.1",
+		"swc-loader": "^0.1.15",
+		"webpack": "^5.71.0",
+		"webpack-cli": "^4.9.2",
+		"webpack-dev-server": "^4.8.1"
+	},
+	"resolutions": {
+		"chokidar": "^3.4.3"
+	},
+	"dependencies": {
+		"commander": "^8.3.0"
+	},
+	"bin": {
+		"platform": "./platform.js"
+	},
+	"type": "module"
+}

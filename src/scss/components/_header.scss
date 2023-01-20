@@ -1,0 +1,26 @@
+.site-header {
+	@include container;
+	padding-top: $padding-lg;
+	padding-bottom: $padding-lg;
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	.branding {
+		.home-link {
+			display: inline-flex;
+			text-decoration: none;
+			align-items: center;
+			.site-logo {
+				width: 52px;
+				height: 52px;
+				margin-right: $padding;
+			}
+			.site-title {
+				font-size: 48px;
+				font-weight: 700;
+				color: $white;
+			}
+		}
+	}
+}

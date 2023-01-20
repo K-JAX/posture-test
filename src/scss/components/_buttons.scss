@@ -1,0 +1,24 @@
+/**
+ * Buttons
+ **/
+
+.fancy-btn {
+	display: inline-block;
+	padding: 1em 2em;
+	font-weight: bold;
+	background: $primary-color;
+	color: white;
+	transition: all .3s ease;
+
+	// hover states
+	&:hover, &:focus, &:active {
+		color: white;
+		background: $primary-color-dark;
+	}
+
+	// active state - click
+	&:active {
+		color: white;
+		background: darken($primary-color-dark, 10%);
+	}
+}

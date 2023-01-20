@@ -1,0 +1,17 @@
+/**
+ * Link styling
+ * Links can get pretty fancy so the setting partials do not get involved
+ **/
+
+a {
+	color: $primary-color;
+	transition: all .3s ease;
+
+	&:hover, &:focus {
+		color: $primary-color-dark;
+	}
+
+	&:active {
+		color: darken($primary-color-dark, 10%);
+	}
+}

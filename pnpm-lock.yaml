@@ -1,0 +1,26 @@
+lockfileVersion: 5.4
+
+overrides:
+  chokidar: ^3.4.3
+
+specifiers:
+  platform: file:./.Platform
+
+dependencies:
+  platform: file:.Platform
+
+packages:
+
+  /commander/8.3.0:
+    resolution: {integrity: sha512-OkTL9umf+He2DZkUq8f8J9of7yL6RJKI24dVITBmNfZBmri9zYZQrKkuXiKhyfPSu8tUhnVBB1iKXevvnlR4Ww==}
+    engines: {node: '>= 12'}
+    dev: false
+
+  file:.Platform:
+    resolution: {directory: .Platform, type: directory}
+    name: platform
+    version: 1.2.2
+    hasBin: true
+    dependencies:
+      commander: 8.3.0
+    dev: false

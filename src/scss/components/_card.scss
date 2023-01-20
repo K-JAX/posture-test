@@ -1,0 +1,14 @@
+.card {
+	box-shadow: $box-shadow;
+	a {
+		text-decoration: none;
+	}
+	figcaption {
+		padding: $padding;
+		.card-title {
+			font-size: 24px;
+			font-weight: 700;
+			color: gray;
+		}
+	}
+}

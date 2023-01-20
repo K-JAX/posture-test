@@ -1,0 +1,13 @@
+/** Blueprint css grid **/
+
+// Sizing variables for the blueprint grid uses the sizing partial variables
+$xs-spacing: $padding-sm;
+$sm-spacing: $padding;
+$md-spacing: $padding-md;
+$lg-spacing: $padding-lg;
+
+// Media Query breakpoints
+$sm-break: map-get($breakpoints, small);
+$md-break: map-get($breakpoints, medium);
+$lg-break: map-get($breakpoints, large);
+$xl-break: map-get($breakpoints, xlarge);

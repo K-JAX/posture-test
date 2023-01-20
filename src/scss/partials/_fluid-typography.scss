@@ -1,0 +1,51 @@
+:root {
+	@include fluid-prop(--fluid-jumbo, 55px, 75px);
+	@include fluid-prop(--fluid-h1, 42px, 60px);
+	@include fluid-prop(--fluid-h2, 34px, 52px);
+	@include fluid-prop(--fluid-h3, 30px, 42px);
+	@include fluid-prop(--fluid-h4, 28px, 34px);
+	@include fluid-prop(--fluid-h5, 24px, 28px);
+	@include fluid-prop(--fluid-h6, 20px, 22px);
+	@include fluid-prop(--fluid-body, 16px, 18px);
+	@include fluid-prop(--fluid-body-sm, 16px, 18px);
+	@include fluid-prop(--fluid-body-xs, 14px, 16px);
+}
+
+h1,
+.fluid-h1 {
+	font-size: var(--fluid-h1);
+}
+
+h2,
+.fluid-h2 {
+	font-size: var(--fluid-h2);
+}
+
+h3,
+.fluid-h3 {
+	font-size: var(--fluid-h3);
+}
+
+h4,
+.fluid-h4 {
+	font-size: var(--fluid-h4);
+}
+
+h5,
+.fluid-h5 {
+	font-size: var(--fluid-h5)
+}
+
+h6,
+.fluid-h6 {
+	font-size: var(--fluid-h6);
+}
+
+html,
+.fluid-body {
+	font-size: var(--fluid-body);
+}
+
+.fluid-body-sm {
+	font-size: var(--fluid-body-sm);
+}

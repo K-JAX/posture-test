@@ -1,0 +1,35 @@
+/**
+ * Settings for sizing variables
+ **/
+
+$global-width: 1200px;
+$global-width-sm: 800px;
+$global-width-md: 1000px;
+$global-width-lg: 1400px;
+
+// General inner-padding vars
+$padding: 20px;
+$padding-xs: 10px;
+$padding-sm: 15px;
+$padding-md: 25px;
+$padding-lg: 30px;
+
+// General margin variables
+$margin: 30px;
+$margin-sm: 20px;
+$margin-md: 40px;
+$margin-lg: 60px;
+
+// Container settings
+$padding-c-tb: 75px;
+$padding-c-tb-sm: 50px;
+$padding-c: $padding;
+$padding-c-sm: $padding-sm;
+
+@mixin container {
+	width: 100%;
+	max-width: $global-width;
+	padding: 0 $padding-c;
+	margin-left: auto;
+	margin-right: auto;
+}

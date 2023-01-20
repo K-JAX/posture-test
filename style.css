@@ -1,0 +1,31 @@
+/*
+ Theme Name:         PosturePress 2
+ Theme URI:          https://www.getposture.com
+ Github Theme URI:   https://github.com/PostureDev/PosturePress.git
+ Description:        PosturePress Child Theme
+ Author:             Posture Interactive
+ Author URI:         https://www.getposture.com/
+ Version:            2.0.0
+ Description:        PosturePress Custom theme engine
+ Template:           posturepress2
+*/
+
+/* ----------------------------------------------------------------------------
+
+  Unfortunately WordPress will require a style.css file
+  located in the theme's root folder for stuff to work.
+
+  However, we will not be using vanilla CSS. We're using Sass.
+
+  Sass is a superset of CSS that adds in amazing features
+  such as variables, nested selectors and loops. It's also
+  the easiest way to customize Foundation.
+
+  All Sass files are located in the /assets/scss folder.
+  Please note that none of your scss files will be compiled before you run
+  'platform start' or 'platform start'.
+
+  Please refer to the wiki documentation before getting started:
+  http://wiki.posturedev.com/posturepress
+
+---------------------------------------------------------------------------- */

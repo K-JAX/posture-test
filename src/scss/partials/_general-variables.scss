@@ -1,0 +1,16 @@
+/**
+ * General variables that can be used throughout the theme :)
+ **/
+
+// simple transition variable
+$transition: all 0.3s ease-in-out;
+
+// simple box shadow variable
+$box-shadow: 5px 5px 15px rgba($black, 0.3);
+
+// A card "cover" box shadow
+$box-shadow-cover: 0 5px 25px rgba($black, 0.2);
+
+@mixin transition {
+	transition: all 0.3s ease-in-out;
+}
