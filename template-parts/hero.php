@@ -15,7 +15,7 @@
 	<div class="video-embed-container">
 		<iframe 
 			class="video-embed" 
-			src="https://www.youtube.com/embed/Sh0YoiVrvQ0?playlist=Sh0YoiVrvQ0&autoplay=1&loop=1&modestbranding=1&controls=0" 
+			src="https://www.youtube.com/embed/Sh0YoiVrvQ0?playlist=Sh0YoiVrvQ0&autoplay=1&mute=1&loop=1&modestbranding=1&controls=0" 
 			title="YouTube video player" 
 			frameborder="0" 
 			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
