@@ -11,16 +11,56 @@
 			display: inline-flex;
 			text-decoration: none;
 			align-items: center;
+			overflow: hidden;
 			.site-logo {
 				width: 52px;
 				height: 52px;
 				margin-right: $padding;
+				transform-origin: bottom;
 			}
 			.site-title {
 				font-size: 48px;
 				font-weight: 700;
 				color: $white;
 			}
+			&:hover {
+				.site-logo {
+					animation: goUp 1.125s ease-in-out;
+				}
+				.site-title {
+					color: $secondary-color;
+				}
+			}
 		}
+	}
+}
+
+@keyframes goUp {
+	0% {
+		transform: scaleY(1) translateY(0);
+	}
+	15% {
+		transform: scaleY(0.35) translateY(0);
+	}
+	20% {
+		transform: scaleY(0.35) translateY(0);
+	}
+	30% {
+		transform: scaleX(0.5) scaleY(1) translateY(-75%);
+	}
+	49% {
+		transform: scaleX(0.5) scaleY(1) translateY(-150%);
+	}
+	50% {
+		transform: scaleX(0.5) scaleY(1) translateY(110%);
+	}
+	80% {
+		transform: scaleX(1) scaleY(0.35) translateY(-220%);
+	}
+	82% {
+		transform: scaleX(1) scaleY(0.35) translateY(-220%);
+	}
+	100% {
+		transform: scaleX(1) scaleY(1) translateY(0);
 	}
 }

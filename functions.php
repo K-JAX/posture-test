@@ -15,3 +15,6 @@ require_once(STYLESHEETPATH . '/library/svgs.php' );
 
 /** PosturePress Custom Child Functions */
 require_once(STYLESHEETPATH . '/library/custom-functions.php' );
+
+/** PosturePress site favicons (tweaked) */
+require_once( 'library/custom-favicons.php');

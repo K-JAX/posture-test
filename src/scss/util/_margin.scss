@@ -1,0 +1,144 @@
+// using padding variables instead of margin variables to
+// keep consistent spacing with padding utility classes
+.m {
+	&-0 {
+		margin: 0;
+	}
+	&-1 {
+		margin: $padding-xs;
+	}
+	&-2 {
+		margin: $padding-sm;
+	}
+	&-3 {
+		margin: $padding;
+	}
+	&-4 {
+		margin: $padding-md;
+	}
+	&-5 {
+		margin: $padding-lg;
+	}
+	&x {
+		&-0 {
+			margin-left: 0;
+			margin-right: 0;
+		}
+		&-1 {
+			margin-left: $padding-xs;
+			margin-right: $padding-xs;
+		}
+		&-2 {
+			margin-left: $padding-sm;
+			margin-right: $padding-sm;
+		}
+		&-3 {
+			margin-left: $padding;
+			margin-right: $padding;
+		}
+		&-4 {
+			margin-left: $padding-md;
+			margin-right: $padding-md;
+		}
+		&-5 {
+			margin-left: $padding-lg;
+			margin-right: $padding-lg;
+		}
+	}
+	&y {
+		&-0 {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		&-1 {
+			margin-top: $padding-xs;
+			margin-bottom: $padding-xs;
+		}
+		&-2 {
+			margin-top: $padding-sm;
+			margin-bottom: $padding-sm;
+		}
+		&-3 {
+			margin-top: $padding;
+			margin-bottom: $padding;
+		}
+		&-4 {
+			margin-top: $padding-md;
+			margin-bottom: $padding-md;
+		}
+		&-5 {
+			margin-top: $padding-lg;
+			margin-bottom: $padding-lg;
+		}
+		&-6 {
+			margin-top: $padding-c-tb;
+			margin-bottom: $padding-c-tb;
+		}
+	}
+	&t {
+		&-0 {
+			margin-top: 0;
+		}
+		&-1 {
+			margin-top: $padding-xs;
+		}
+		&-2 {
+			margin-top: $padding-sm;
+		}
+		&-3 {
+			margin-top: $padding;
+		}
+		&-4 {
+			margin-top: $padding-md;
+		}
+		&-5 {
+			margin-top: $padding-lg;
+		}
+		&-n {
+			&1 {
+				margin-top: -$padding-xs;
+			}
+			&2 {
+				margin-top: -$padding-sm;
+			}
+			&3 {
+				margin-top: -$padding;
+			}
+			&4 {
+				margin-top: -$padding-md;
+			}
+			&5 {
+				margin-top: -$padding-lg;
+			}
+		}
+	}
+	&b {
+		&-0 {
+			margin-bottom: 0;
+		}
+		&-1 {
+			margin-bottom: $padding-xs;
+		}
+		&-2 {
+			margin-bottom: $padding-sm;
+		}
+		&-3 {
+			margin-bottom: $padding;
+		}
+		&-4 {
+			margin-bottom: $padding-md;
+		}
+		&-5 {
+			margin-bottom: $padding-lg;
+		}
+		&-6 {
+			margin-bottom: $padding-c-tb;
+		}
+		&-7 {
+			margin-bottom: 90px;
+		}
+		&-8 {
+			margin-bottom: 110px;
+		}
+	}
+}

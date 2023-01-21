@@ -1,0 +1,15 @@
+.overlay {
+	box-shadow: $box-shadow-distant;
+	position: relative;
+	background-color: $white;
+	z-index: 1;
+	&.fixed {
+		position: fixed;
+	}
+	&.absolute {
+		position: absolute;
+	}
+	&.overlay--previous {
+		margin-top: -7em;
+	}
+}

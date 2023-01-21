@@ -1,6 +1,6 @@
 :root {
 	@include fluid-prop(--fluid-jumbo, 55px, 75px);
-	@include fluid-prop(--fluid-h1, 42px, 60px);
+	@include fluid-prop(--fluid-h1, 25px, 60px); // tweaking the min value to match design comp
 	@include fluid-prop(--fluid-h2, 34px, 52px);
 	@include fluid-prop(--fluid-h3, 30px, 42px);
 	@include fluid-prop(--fluid-h4, 28px, 34px);
@@ -33,7 +33,7 @@ h4,
 
 h5,
 .fluid-h5 {
-	font-size: var(--fluid-h5)
+	font-size: var(--fluid-h5);
 }
 
 h6,

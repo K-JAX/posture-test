@@ -1,0 +1,19 @@
+// utility classes for fonts and text
+.poppins {
+	font-family: "Poppins", sans-serif;
+}
+.franklin {
+	font-family: "franklin-gothic-urw", sans-serif;
+}
+
+.text- {
+	&left {
+		text-align: left;
+	}
+	&center {
+		text-align: center;
+	}
+	&right {
+		text-align: right;
+	}
+}

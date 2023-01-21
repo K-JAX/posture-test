@@ -1,0 +1,59 @@
+.bg {
+	&-primary {
+		background-color: $primary-color;
+	}
+	&-secondary {
+		background-color: $secondary-color;
+	}
+	&-tertiary {
+		background-color: $tertiary-color;
+	}
+	&-quaternary {
+		background-color: $quaternary-color;
+	}
+	&-white {
+		background-color: $white;
+	}
+}
+
+@mixin inherit-color($color) {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p,
+	a,
+	b,
+	strong,
+	i,
+	blockquote,
+	li,
+	span,
+	div,
+	input,
+	button,
+	textarea {
+		color: $color;
+	}
+	color: $color;
+}
+
+.text {
+	&-primary {
+		@include inherit-color($primary-color);
+	}
+	&-secondary {
+		@include inherit-color($secondary-color);
+	}
+	&-tertiary {
+		@include inherit-color($tertiary-color);
+	}
+	&-quaternary {
+		@include inherit-color($quaternary-color);
+	}
+	&-white {
+		@include inherit-color($white);
+	}
+}

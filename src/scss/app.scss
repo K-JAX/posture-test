@@ -27,11 +27,19 @@
 @import "components/header";
 @import "components/links";
 @import "components/navigation";
+@import "components/overlays";
 @import "components/footer";
 @import "components/grids";
 
-// Utilities
-@import "util/padding";
-
 // Templates
 @import "templates/front";
+
+// Utilities
+@import "util/colors";
+@import "util/flex";
+@import "util/margin";
+@import "util/padding";
+@import "util/typography";
+
+//Wordpress Overwrites
+@import "wordpress/plugins";

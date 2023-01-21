@@ -5,6 +5,10 @@
  * @package PosturePress
  * @since PosturePress 1.0.0
  */
+
+ if($args['hero']) :
+	$hero = $args['hero'];
+ endif;
 ?>
 
 <div id="hero">
@@ -19,7 +23,13 @@
 		</iframe>
 	</div>
 	<div class="hero-headline">
-		<h1>We have a solution for the exact thing you need.</h1>
-		<a href="/products">Products</a>
+		<?php if($hero['headline']): ?>
+			<h1 class="fluid-h1 mb-5"><?php echo $hero['headline']; ?></h1>
+		<?php endif; ?>
+		<?php if($hero['cta']['url'] && $hero['cta']['title']): 
+			$target = $hero['cta']['target'] ? $hero['cta']['target'] : '_self';
+			?>
+			<a class="fancy-btn clear white" href="<?php echo esc_url($hero['cta']['url']); ?>" target="<?php echo esc_attr($target); ?>"><?php echo $hero['cta']['title']; ?></a>
+		<?php endif ?>;
 	</div>
 </div>

@@ -1,0 +1,112 @@
+// overwrites to default Wordpress plugin styles
+
+// Blog Designer Pack plugin overwrites
+.bdp-post-carousel-wrp {
+	overflow: visible;
+	.bdp-post-carousel {
+		position: relative;
+		overflow: visible !important;
+		.slick-track {
+			display: flex;
+			align-items: stretch;
+			align-content: stretch;
+			height: 550px;
+			padding-bottom: 1em;
+			gap: 20px;
+			.bdp-post-carousel-slide.slick-slide {
+				box-shadow: $box-shadow-distant;
+				height: 95%;
+				overflow: hidden;
+				.bdp-post-carousel-content {
+					.bdp-post-image-bg {
+						img {
+							width: 100%;
+							height: 300px;
+							object-fit: cover;
+						}
+					}
+					h2.bdp-post-title {
+						font-size: 24px;
+						text-align: left;
+						padding: $padding;
+						a {
+							font-family: "Poppins", sans-serif;
+							font-size: 24px;
+							font-weight: 500;
+							color: $dark-gray;
+							line-height: 1;
+						}
+					}
+				}
+			}
+		}
+		.slick-arrow {
+			z-index: 1;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			width: 50px;
+			height: 50px;
+			margin-top: auto !important;
+			margin-bottom: auto !important;
+			background: none !important;
+			display: none !important;
+			@include mq(m) {
+				display: block !important;
+			}
+			&:hover,
+			&:focus {
+				background: none !important;
+				&:after {
+					opacity: 0.75;
+				}
+			}
+			&:after {
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				margin: auto;
+				border: 4px solid $primary-color;
+				border-bottom: none;
+				border-radius: 2px;
+				transition: 0.1s;
+			}
+			&.slick-prev {
+				left: 5% !important;
+				@include mq(l) {
+					left: 0% !important;
+				}
+				@include mq(1400px) {
+					left: -5% !important;
+				}
+				&:after {
+					transform: rotate(-45deg);
+					box-shadow: -2px -2px 1px 0px rgba(255, 255, 255, 1), inset 2px 2px 1px 0px rgba(255, 255, 255, 1);
+					border-right: none;
+				}
+			}
+			&.slick-next {
+				right: 5% !important;
+				@include mq(l) {
+					right: 0% !important;
+				}
+				@include mq(1400px) {
+					right: -5% !important;
+				}
+				&:after {
+					transform: translateX(-45px) rotate(45deg);
+					box-shadow: 2px -2px 1px 0px rgba(255, 255, 255, 1), inset -2px 2px 1px 0px rgba(255, 255, 255, 1);
+					border-left: none;
+					@include mq(l) {
+						transform: translateX(-10px) rotate(45deg);
+					}
+				}
+			}
+		}
+	}
+}

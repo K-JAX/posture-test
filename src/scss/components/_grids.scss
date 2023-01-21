@@ -23,7 +23,6 @@
 	}
 }
 
-
 .f-grid {
 	display: flex;
 	flex-flow: row wrap;
@@ -32,14 +31,14 @@
 	--cell-size-lg: 33.33%;
 	--grid-gap: 30px;
 
-	margin: calc((var(--grid-gap) * .5) * -1);
+	margin: calc((var(--grid-gap) * 0.5) * -1);
 
 	.cell {
 		display: flex;
 		flex-flow: column nowrap;
 		height: auto;
 		flex-basis: calc(var(--cell-size-sm) - var(--grid-gap));
-		margin: calc(var(--grid-gap) * .5);
+		margin: calc(var(--grid-gap) * 0.5);
 
 		@include mq(m) {
 			flex-basis: calc(var(--cell-size-md) - var(--grid-gap));
@@ -47,6 +46,18 @@
 
 		@include mq(l) {
 			flex-basis: calc(var(--cell-size-lg) - var(--grid-gap));
+		}
+	}
+	&-halves {
+		display: flex;
+		flex-flow: row wrap;
+		.cell {
+			width: 100%;
+			height: auto;
+			// margin: calc(var(--grid-gap) * 0.5);
+			@include mq(l) {
+				width: 50%;
+			}
 		}
 	}
 }

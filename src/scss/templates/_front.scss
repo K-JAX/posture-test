@@ -12,11 +12,20 @@
 			position: absolute;
 			top: 50%;
 			left: 50%;
-			width: 100%;
-			height: 110%;
+			// width: 100%;
+			// height: 110%;
+			width: 100vw;
+			height: 100vh;
 			transform: translate(-50%, -50%);
-			z-index: 0;
-			// filter: brightness(110%) contrast(70%) sepia(10%);
+			max-width: initial;
+			transition: 0s;
+			@media (min-aspect-ratio: 16/9) {
+				height: 56.25vw;
+			}
+
+			@media (max-aspect-ratio: 16/9) {
+				width: 177.78vh;
+			}
 		}
 		&:after {
 			content: "";
@@ -40,11 +49,55 @@
 			color: $white;
 			text-transform: uppercase;
 		}
-		@include mq(m) {
-			font-size: 64px;
+	}
+}
+
+#introduction {
+	.content {
+		flex-direction: column-reverse;
+		align-content: center;
+		flex-wrap: wrap;
+		padding: 4em;
+		.caption {
+			width: 100%;
+		}
+		.image {
+			text-align: center;
+			width: 100%;
+			margin-bottom: 3em;
 		}
 		@include mq(l) {
-			font-size: 72px;
+			flex-direction: row-reverse;
+			gap: 10px;
+			.caption {
+				width: 64%;
+			}
+			.image {
+				width: 34%;
+				img {
+					height: 100%;
+					object-fit: contain;
+				}
+			}
+		}
+	}
+}
+
+#why {
+	.content {
+		flex-direction: column-reverse;
+		align-content: center;
+		padding: 0 4em;
+		@include mq(l) {
+			flex-direction: row;
+			align-content: initial;
+		}
+		.image {
+			margin-top: -8em;
+			margin-bottom: 5em;
+			@include mq(l) {
+				margin-bottom: 0;
+			}
 		}
 	}
 }
